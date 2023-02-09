@@ -86,6 +86,7 @@
   display: flex;
   align-items: center;
 }
+
 .change-theme{
   font-size: 1.25rem;
   color: var(--title-color);
@@ -182,46 +183,53 @@ img {
    justify-content: space-between;
    align-items: center;
 }
-.nav_log,
+.nav_logo,
 .nav_toggle{
    color: var(--title-color);
    font-weight: var(--font-medium);
 }
-.nav_log:hover{
+.nav_logo:hover{
    color: var(--first-color);
 }
+.nav_toggle{
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav_toggle:hover{
+  color:var(--first-color)
+}
 @media screen and (max-width: 767px){
-      .nav__menu{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: var(--body-color);
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 --1px 4px rgba(red, green, blue, alpha);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
+  .nav_menu{
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0,0,0, .15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: .3s;
       }
 }
-.nav__list{
+.nav_list{
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.nav__link{
+.nav_link{
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-.nav__link:hover{
+.nav_link:hover{
   color: var(--first-color);
 }
 .nav__icon{
   font-size: 1.2rem;
 }
-.nav__close{
+.nav_close{
   position: absolute;
   right: 1.3rem;
   bottom: .5rem;
@@ -229,7 +237,7 @@ img {
   cursor: pointer;
   color: var(--first-color);
 }
-.nav__close:hover{
+.nav_close:hover{
   color: var(--first-color-alt);
 }
 /* show menu */
@@ -604,11 +612,6 @@ img {
   font-size: 2rem;
   color: var(--first-color);
 }
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -735,9 +738,11 @@ img {
   }  
   .nav_menu{
     padding: 2rem .25rem 4rem;
+
   }
   .nav_list{
     column-gap: 0;
+    
   }
   .home__content{
     grid-template-columns: .25fr 3fr;

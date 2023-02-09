@@ -1,7 +1,7 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu')
-        navToggle = document.getElementById('nav-toggles'),
-        navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu'),
+        navToggle = document.getElementById('nav_toggles'),
+        navClose = document.getElementById('nav_close')
 
     
 /*===== MENU SHOW =====*/
@@ -75,10 +75,6 @@ var swiper = new Swiper(".portfolio__container", {
     mousewheel: true,
     keyboard: true,
   });
-
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
