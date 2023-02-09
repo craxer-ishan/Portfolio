@@ -1,6 +1,6 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav_toggles'),
+        navToggle = document.getElementById('nav_toggle'),
         navClose = document.getElementById('nav_close')
 
     
@@ -21,7 +21,7 @@ if(navClose){
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelector('nav__link')
+const navLink = document.querySelector('nav_link')
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     //when we click on each nav_link, we remove the show menu class
